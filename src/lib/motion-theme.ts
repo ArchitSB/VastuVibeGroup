@@ -1,0 +1,55 @@
+export const motionTheme = {
+  spring: {
+    snap: { stiffness: 1200, damping: 70 },
+    ui: { stiffness: 305, damping: 33 },
+    gentle: { stiffness: 110, damping: 20 },
+    ambient: { stiffness: 43, damping: 13 },
+  },
+  stagger: {
+    tight: 0.04,
+    base: 0.08,
+    relaxed: 0.15,
+  },
+  duration: {
+    instant: 0.18,
+    ui: 0.48,
+    reveal: 0.84,
+    ambient: 4.8,
+    preloader: 0.72,
+    preloaderMax: 0.9,
+  },
+  ease: {
+    out: "power3.out",
+    soft: "power2.out",
+    inOut: "power2.inOut",
+  },
+  hero: {
+    desktopScrollLength: "200%",
+    scrub: 1,
+    towerScaleStart: 0.85,
+    towerScaleEnd: 1.6,
+    mobileScaleEnd: 1.25,
+    maxIdleRotationY: 8,
+    maxIdleRotationZ: 3,
+    maxPointerRotation: 4,
+    desktopParticleCount: 700,
+    desktopDpr: 1.5,
+    revealOffset: 40,
+    textLift: -84,
+    mobileTowerTravel: 70,
+    desktopTowerTravel: 3.15,
+    cameraDolly: 0.8,
+  },
+  reactBits: {
+    splitDelayMs: 80,
+    splitThreshold: 0.1,
+    countDuration: 2,
+    tiltScale: 1.06,
+    tiltAmplitude: 8,
+    tooltipVelocity: 0.6,
+    shineSpeed: 2,
+    shineSpread: 120,
+  },
+} as const;
+
+export type MotionTheme = typeof motionTheme;

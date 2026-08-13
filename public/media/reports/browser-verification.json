@@ -1,0 +1,114 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "generatedAt": "2026-08-13T20:04:54.630Z",
+  "consoleErrors": [],
+  "desktop": {
+    "viewport": [
+      1440,
+      1000
+    ],
+    "canvas": true,
+    "deviceMemory": 8,
+    "pageHeight": 9137,
+    "scrollY": 0,
+    "heroRect": {
+      "x": 0,
+      "y": 0.0010000000474974513,
+      "width": 1440,
+      "height": 1000,
+      "top": 0.0010000000474974513,
+      "right": 1440,
+      "bottom": 1000.0010000000475,
+      "left": 0
+    },
+    "heroStyle": "translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 1440px; width: 1440px; max-height: 1000px; height: 1000px; padding: 0px; transform: translate(0px, 0.001px);",
+    "heroParentClass": "pin-spacer",
+    "heroParentRect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1000,
+      "top": 0,
+      "right": 1440,
+      "bottom": 1000,
+      "left": 0
+    },
+    "heroParentStyle": "order: 0; place-self: auto; grid-area: auto; z-index: 3; float: none; flex-shrink: 1; display: block; margin: 0px 0px 2000px; inset: 0px; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 1440px; height: 1000px; padding: 0px;",
+    "smoothStyle": "translate: none; rotate: none; scale: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); box-sizing: border-box; width: 100%; overflow: visible;",
+    "webglReady": true,
+    "sessionFlagAfterFirstVisit": "true",
+    "preloaderElementsAfterReload": 0
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "canvas": 0,
+    "threeRuntimeLoaded": false,
+    "firstLoadJsBytes": 185162,
+    "resources": [
+      {
+        "url": "http://localhost:3000/_next/static/chunks/webpack-5d108a3d0b00fe82.js",
+        "transferSize": 2175,
+        "encodedBodySize": 1875,
+        "decodedBodySize": 3607
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/main-app-98588c8ff257e64a.js",
+        "transferSize": 858,
+        "encodedBodySize": 558,
+        "decodedBodySize": 558
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/04763798-54093ab3e3cf7aa0.js",
+        "transferSize": 20867,
+        "encodedBodySize": 20567,
+        "decodedBodySize": 51544
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/86-5bf4bde4b09fb979.js",
+        "transferSize": 26343,
+        "encodedBodySize": 26043,
+        "decodedBodySize": 63045
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/484-c0f5c1963822c2b9.js",
+        "transferSize": 45120,
+        "encodedBodySize": 44820,
+        "decodedBodySize": 173963
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/app/layout-46eb81840dc49660.js",
+        "transferSize": 3741,
+        "encodedBodySize": 3441,
+        "decodedBodySize": 9659
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/5c634634-c91e72d76c4ba349.js",
+        "transferSize": 54616,
+        "encodedBodySize": 54316,
+        "decodedBodySize": 173019
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/766-d86c38c0a4b0d377.js",
+        "transferSize": 27529,
+        "encodedBodySize": 27229,
+        "decodedBodySize": 75584
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/app/page-a4797d356079db48.js",
+        "transferSize": 6613,
+        "encodedBodySize": 6313,
+        "decodedBodySize": 14355
+      }
+    ],
+    "sessionFlagAfterFirstVisit": "true",
+    "preloaderElementsAfterReload": 0
+  },
+  "reducedMotion": {
+    "canvas": 0,
+    "preloader": 0,
+    "siteReady": "true"
+  }
+}

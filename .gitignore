@@ -1,0 +1,25 @@
+# dependencies
+/node_modules
+/.venv
+/.pnp
+.pnp.*
+
+# Next.js / exports
+/.next
+/out
+
+# local reference studies (never shipped)
+/reference
+
+# generated / local tooling
+.DS_Store
+*.log
+.lighthouseci
+
+# environment
+.env*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts

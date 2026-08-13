@@ -1,0 +1,45 @@
+{
+  "name": "vastuvibe-group",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "serve out -l 3000",
+    "lint": "eslint .",
+    "fetch:assets": "node scripts/fetch-assets.mjs",
+    "process:images": "node scripts/process-images.mjs"
+  },
+  "dependencies": {
+    "@eslint/eslintrc": "latest",
+    "@gsap/react": "^2.1.2",
+    "@react-three/drei": "latest",
+    "@react-three/fiber": "latest",
+    "animejs": "latest",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "gsap": "^3.13.0",
+    "motion": "^12.43.0",
+    "next": "15.5.23",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "sharp": "latest",
+    "tailwind-merge": "latest",
+    "three": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/three": "latest",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "15.5.23",
+    "lighthouse": "^13.4.1",
+    "playwright-core": "^1.62.1",
+    "serve": "latest",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3"
+  },
+  "packageManager": "pnpm@11.20.0"
+}

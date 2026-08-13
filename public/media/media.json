@@ -1,0 +1,341 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-13T19:25:29.108Z",
+  "note": "All paths are local. Swap source files and rerun pnpm process:images; components remain unchanged.",
+  "assets": {
+    "skyline-dubai": {
+      "alt": "Dubai skyline illuminated at night",
+      "raw": "/media/raw/skyline-dubai.jpg",
+      "sourcePage": "https://www.pexels.com/photo/aerial-view-of-dubai-skyline-at-night-36738857/",
+      "sourceUrl": "https://images.pexels.com/photos/36738857/pexels-photo-36738857.jpeg?auto=compress&cs=tinysrgb&w=3000",
+      "tonalProfile": "warm",
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABUOEBIQDRUSERIYFhUZHzQiHx0dH0AuMCY0TENQT0tDSUhUXnlmVFlyWkhJaY9qcnyAh4iHUWWUn5ODnXmEh4L/2wBDARYYGB8cHz4iIj6CVklWgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoL/wAARCAAQABgDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAgb/xAAhEAEAAgIBAwUAAAAAAAAAAAABAgMAIREEEjEiQUJhof/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFxEBAQEBAAAAAAAAAAAAAAAAABEBAv/aAAwDAQACEQMRAD8AzlNEGLJ7tedZKVpzCE0PLlqrO5tPSRXSP7jFA0rBNLyuTvSoRthWa4kP3hjfUUVyskyt9/jFecMUj//Z",
+      "variants": {
+        "640": {
+          "width": 640,
+          "height": 427,
+          "avif": "/media/processed/skyline-dubai-640.avif",
+          "webp": "/media/processed/skyline-dubai-640.webp",
+          "jpg": "/media/processed/skyline-dubai-640.jpg",
+          "bytes": {
+            "avif": 40216,
+            "webp": 51446,
+            "jpg": 58740
+          }
+        },
+        "1280": {
+          "width": 1280,
+          "height": 853,
+          "avif": "/media/processed/skyline-dubai-1280.avif",
+          "webp": "/media/processed/skyline-dubai-1280.webp",
+          "jpg": "/media/processed/skyline-dubai-1280.jpg",
+          "bytes": {
+            "avif": 130872,
+            "webp": 168922,
+            "jpg": 203931
+          }
+        },
+        "2000": {
+          "width": 2000,
+          "height": 1333,
+          "avif": "/media/processed/skyline-dubai-2000.avif",
+          "webp": "/media/processed/skyline-dubai-2000.webp",
+          "jpg": "/media/processed/skyline-dubai-2000.jpg",
+          "bytes": {
+            "avif": 261367,
+            "webp": 334464,
+            "jpg": 433575
+          }
+        }
+      }
+    },
+    "lagoon-aerial": {
+      "alt": "Luxury residences over a turquoise lagoon",
+      "raw": "/media/raw/lagoon-aerial.jpg",
+      "sourcePage": "https://www.pexels.com/photo/overwater-villa-in-tropical-maldives-lagoon-28843967/",
+      "sourceUrl": "https://images.pexels.com/photos/28843967/pexels-photo-28843967.jpeg?auto=compress&cs=tinysrgb&w=3000",
+      "tonalProfile": "warm",
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABUOEBIQDRUSERIYFhUZHzQiHx0dH0AuMCY0TENQT0tDSUhUXnlmVFlyWkhJaY9qcnyAh4iHUWWUn5ODnXmEh4L/2wBDARYYGB8cHz4iIj6CVklWgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoL/wAARCAAQABgDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBAgME/8QAIhAAAgIDAAAHAQAAAAAAAAAAAQIDEQAEEhMVISIxQlGh/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EABwRAAICAgMAAAAAAAAAAAAAAAABAhEDEzJhof/aAAwDAQACEQMRAD8AnxtdZOJHAJoABgDm7QjsGKRWU/XqmxZs6urI/Y2lDXfwTl4ELsB5jbXfolH+4HMlDDCqa9Qz1X13kIDH2mjZBGGc8Eawx82bJsn9OGPXZn2pcUf/2Q==",
+      "variants": {
+        "640": {
+          "width": 640,
+          "height": 426,
+          "avif": "/media/processed/lagoon-aerial-640.avif",
+          "webp": "/media/processed/lagoon-aerial-640.webp",
+          "jpg": "/media/processed/lagoon-aerial-640.jpg",
+          "bytes": {
+            "avif": 38013,
+            "webp": 44422,
+            "jpg": 51987
+          }
+        },
+        "1280": {
+          "width": 1280,
+          "height": 853,
+          "avif": "/media/processed/lagoon-aerial-1280.avif",
+          "webp": "/media/processed/lagoon-aerial-1280.webp",
+          "jpg": "/media/processed/lagoon-aerial-1280.jpg",
+          "bytes": {
+            "avif": 141009,
+            "webp": 166696,
+            "jpg": 195162
+          }
+        },
+        "2000": {
+          "width": 2000,
+          "height": 1333,
+          "avif": "/media/processed/lagoon-aerial-2000.avif",
+          "webp": "/media/processed/lagoon-aerial-2000.webp",
+          "jpg": "/media/processed/lagoon-aerial-2000.jpg",
+          "bytes": {
+            "avif": 318074,
+            "webp": 383602,
+            "jpg": 457007
+          }
+        }
+      }
+    },
+    "marina-night": {
+      "alt": "Dubai Marina towers reflected in the water at night",
+      "raw": "/media/raw/marina-night.jpg",
+      "sourcePage": "https://www.pexels.com/photo/marina-in-dubai-at-night-16533792/",
+      "sourceUrl": "https://images.pexels.com/photos/16533792/pexels-photo-16533792.jpeg?auto=compress&cs=tinysrgb&w=3000",
+      "tonalProfile": "warm",
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABUOEBIQDRUSERIYFhUZHzQiHx0dH0AuMCY0TENQT0tDSUhUXnlmVFlyWkhJaY9qcnyAh4iHUWWUn5ODnXmEh4L/2wBDARYYGB8cHz4iIj6CVklWgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoL/wAARCAAQABgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAb/xAAjEAACAQMEAQUAAAAAAAAAAAABAhEAAwQFEhMhYRQiMUGR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/8QAFxEBAQEBAAAAAAAAAAAAAAAAABEBIf/aAAwDAQACEQMRAD8A5/Cx+VuNVBcjpT91ssYvpLqlwxdZBUmBNTrGTd+AyxPciq+nNzsBdYoNvQS4ZPmitQnKwFWyt9AIk7vd+UU3ULlhcROEnk3GSWkwB5opXMf/2Q==",
+      "variants": {
+        "640": {
+          "width": 640,
+          "height": 427,
+          "avif": "/media/processed/marina-night-640.avif",
+          "webp": "/media/processed/marina-night-640.webp",
+          "jpg": "/media/processed/marina-night-640.jpg",
+          "bytes": {
+            "avif": 41055,
+            "webp": 57714,
+            "jpg": 64815
+          }
+        },
+        "1280": {
+          "width": 1280,
+          "height": 853,
+          "avif": "/media/processed/marina-night-1280.avif",
+          "webp": "/media/processed/marina-night-1280.webp",
+          "jpg": "/media/processed/marina-night-1280.jpg",
+          "bytes": {
+            "avif": 128937,
+            "webp": 180148,
+            "jpg": 218810
+          }
+        },
+        "2000": {
+          "width": 2000,
+          "height": 1333,
+          "avif": "/media/processed/marina-night-2000.avif",
+          "webp": "/media/processed/marina-night-2000.webp",
+          "jpg": "/media/processed/marina-night-2000.jpg",
+          "bytes": {
+            "avif": 257734,
+            "webp": 349716,
+            "jpg": 461199
+          }
+        }
+      }
+    },
+    "villas-dusk": {
+      "alt": "Contemporary luxury villa and pool at dusk",
+      "raw": "/media/raw/villas-dusk.jpg",
+      "sourcePage": "https://www.pexels.com/photo/luxurious-villa-with-pool-at-dusk-35060260/",
+      "sourceUrl": "https://images.pexels.com/photos/35060260/pexels-photo-35060260.jpeg?auto=compress&cs=tinysrgb&w=3000",
+      "tonalProfile": "warm",
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABUOEBIQDRUSERIYFhUZHzQiHx0dH0AuMCY0TENQT0tDSUhUXnlmVFlyWkhJaY9qcnyAh4iHUWWUn5ODnXmEh4L/2wBDARYYGB8cHz4iIj6CVklWgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoL/wAARCAAQABgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAQT/xAAhEAACAgEEAgMAAAAAAAAAAAABAgADEQQSIVEiYUFxwf/EABYBAQEBAAAAAAAAAAAAAAAAAAMBAv/EABoRAAIDAQEAAAAAAAAAAAAAAAABAgMSIVH/2gAMAwEAAhEDEQA/AJNOmayhXSq0l+QRyAPefyZfpGpALA4PyVxzG6Ot0rrY2sXIzjr6Ec7ux2MoDnGD36E3Gyalxlwsk3aOxCdmrViN5r3+QByohFdz9QWGf//Z",
+      "variants": {
+        "640": {
+          "width": 640,
+          "height": 427,
+          "avif": "/media/processed/villas-dusk-640.avif",
+          "webp": "/media/processed/villas-dusk-640.webp",
+          "jpg": "/media/processed/villas-dusk-640.jpg",
+          "bytes": {
+            "avif": 31250,
+            "webp": 41456,
+            "jpg": 52673
+          }
+        },
+        "1280": {
+          "width": 1280,
+          "height": 854,
+          "avif": "/media/processed/villas-dusk-1280.avif",
+          "webp": "/media/processed/villas-dusk-1280.webp",
+          "jpg": "/media/processed/villas-dusk-1280.jpg",
+          "bytes": {
+            "avif": 106768,
+            "webp": 144146,
+            "jpg": 180733
+          }
+        },
+        "2000": {
+          "width": 2000,
+          "height": 1334,
+          "avif": "/media/processed/villas-dusk-2000.avif",
+          "webp": "/media/processed/villas-dusk-2000.webp",
+          "jpg": "/media/processed/villas-dusk-2000.jpg",
+          "bytes": {
+            "avif": 231920,
+            "webp": 308610,
+            "jpg": 401017
+          }
+        }
+      }
+    },
+    "interior-night": {
+      "alt": "Luxury apartment interior with a panoramic evening view",
+      "raw": "/media/raw/interior-night.jpg",
+      "sourcePage": "https://www.pexels.com/photo/spacious-living-room-with-panoramic-windows-in-evening-time-7045915/",
+      "sourceUrl": "https://images.pexels.com/photos/7045915/pexels-photo-7045915.jpeg?auto=compress&cs=tinysrgb&w=3000",
+      "tonalProfile": "warm",
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABUOEBIQDRUSERIYFhUZHzQiHx0dH0AuMCY0TENQT0tDSUhUXnlmVFlyWkhJaY9qcnyAh4iHUWWUn5ODnXmEh4L/2wBDARYYGB8cHz4iIj6CVklWgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoL/wAARCAAQABgDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwUG/8QAIRAAAgEFAAEFAAAAAAAAAAAAAQIDAAQREiEFFDEyUuH/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQASAjH/2gAMAwEAAhEDEQA/AOZktZYsNgMD7EHtTSOQKX9MpAHck4rZnfx8Emix7tzJbJFUKts2x2foIxjlD0SDJw2rSvqUVD9Qf2im3tl+cMp2GD0UUbJyvl//2Q==",
+      "variants": {
+        "640": {
+          "width": 640,
+          "height": 416,
+          "avif": "/media/processed/interior-night-640.avif",
+          "webp": "/media/processed/interior-night-640.webp",
+          "jpg": "/media/processed/interior-night-640.jpg",
+          "bytes": {
+            "avif": 25623,
+            "webp": 33376,
+            "jpg": 46241
+          }
+        },
+        "1280": {
+          "width": 1280,
+          "height": 831,
+          "avif": "/media/processed/interior-night-1280.avif",
+          "webp": "/media/processed/interior-night-1280.webp",
+          "jpg": "/media/processed/interior-night-1280.jpg",
+          "bytes": {
+            "avif": 74905,
+            "webp": 91966,
+            "jpg": 145285
+          }
+        },
+        "2000": {
+          "width": 2000,
+          "height": 1299,
+          "avif": "/media/processed/interior-night-2000.avif",
+          "webp": "/media/processed/interior-night-2000.webp",
+          "jpg": "/media/processed/interior-night-2000.jpg",
+          "bytes": {
+            "avif": 144226,
+            "webp": 170652,
+            "jpg": 295141
+          }
+        }
+      }
+    },
+    "dar-coast": {
+      "alt": "Indian Ocean at dusk in Dar es Salaam",
+      "raw": "/media/raw/dar-coast.jpg",
+      "sourcePage": "https://www.pexels.com/photo/sunset-above-calm-sea-water-13344624/",
+      "sourceUrl": "https://images.pexels.com/photos/13344624/pexels-photo-13344624.jpeg?auto=compress&cs=tinysrgb&w=3000",
+      "tonalProfile": "teal",
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABUOEBIQDRUSERIYFhUZHzQiHx0dH0AuMCY0TENQT0tDSUhUXnlmVFlyWkhJaY9qcnyAh4iHUWWUn5ODnXmEh4L/2wBDARYYGB8cHz4iIj6CVklWgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoL/wAARCAAQABgDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUGBP/EACAQAAICAgICAwAAAAAAAAAAAAEDAAIEERIhYXIxQdH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgT/xAAZEQEBAQEBAQAAAAAAAAAAAAABAgAhAxH/2gAMAwEAAhEDEQA/AMK1NY02uLEk7JlDg8MdYqAN/cmV5eRU9MPXgRji3ymaNrs16iF6zfETVLLzOHvB38DzCLGUyeRFWM16j9hMrFU/VMohv//Z",
+      "variants": {
+        "640": {
+          "width": 640,
+          "height": 427,
+          "avif": "/media/processed/dar-coast-640.avif",
+          "webp": "/media/processed/dar-coast-640.webp",
+          "jpg": "/media/processed/dar-coast-640.jpg",
+          "bytes": {
+            "avif": 19224,
+            "webp": 26284,
+            "jpg": 35176
+          }
+        },
+        "1280": {
+          "width": 1280,
+          "height": 853,
+          "avif": "/media/processed/dar-coast-1280.avif",
+          "webp": "/media/processed/dar-coast-1280.webp",
+          "jpg": "/media/processed/dar-coast-1280.jpg",
+          "bytes": {
+            "avif": 60410,
+            "webp": 81004,
+            "jpg": 113867
+          }
+        },
+        "2000": {
+          "width": 2000,
+          "height": 1333,
+          "avif": "/media/processed/dar-coast-2000.avif",
+          "webp": "/media/processed/dar-coast-2000.webp",
+          "jpg": "/media/processed/dar-coast-2000.jpg",
+          "bytes": {
+            "avif": 117621,
+            "webp": 155834,
+            "jpg": 237205
+          }
+        }
+      }
+    },
+    "city-teal": {
+      "alt": "Downtown Dar es Salaam viewed from above at sunset",
+      "raw": "/media/raw/city-teal.jpg",
+      "sourcePage": "https://unsplash.com/photos/U-aYAp5OpEo",
+      "sourceUrl": "https://images.unsplash.com/photo-1709719263441-583d78ced547?auto=format&fit=crop&fm=jpg&q=86&w=3000",
+      "tonalProfile": "teal",
+      "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABUOEBIQDRUSERIYFhUZHzQiHx0dH0AuMCY0TENQT0tDSUhUXnlmVFlyWkhJaY9qcnyAh4iHUWWUn5ODnXmEh4L/2wBDARYYGB8cHz4iIj6CVklWgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoL/wAARCAARABgDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAMEBgH/xAAoEAACAQIEAwkAAAAAAAAAAAABAgADEQQSMUEFIYETIjNCUnKRscH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgH/xAAbEQEAAgIDAAAAAAAAAAAAAAAAARECMlFhgf/aAAwDAQACEQMRAD8AvJjsJYd4SVeI4Qbj5mVV6TIFDZjttYTinNbJmUeq/KLlNRw1jcSwvlYRMo5qIwXtCb8zbQRM9L6QDWh1lxNafuP7ESsdmzqjbx26/cRESh//2Q==",
+      "variants": {
+        "640": {
+          "width": 640,
+          "height": 464,
+          "avif": "/media/processed/city-teal-640.avif",
+          "webp": "/media/processed/city-teal-640.webp",
+          "jpg": "/media/processed/city-teal-640.jpg",
+          "bytes": {
+            "avif": 36454,
+            "webp": 51844,
+            "jpg": 59877
+          }
+        },
+        "1280": {
+          "width": 1280,
+          "height": 929,
+          "avif": "/media/processed/city-teal-1280.avif",
+          "webp": "/media/processed/city-teal-1280.webp",
+          "jpg": "/media/processed/city-teal-1280.jpg",
+          "bytes": {
+            "avif": 131684,
+            "webp": 189724,
+            "jpg": 218456
+          }
+        },
+        "2000": {
+          "width": 2000,
+          "height": 1451,
+          "avif": "/media/processed/city-teal-2000.avif",
+          "webp": "/media/processed/city-teal-2000.webp",
+          "jpg": "/media/processed/city-teal-2000.jpg",
+          "bytes": {
+            "avif": 314209,
+            "webp": 450060,
+            "jpg": 508157
+          }
+        }
+      }
+    }
+  },
+  "cutouts": {
+    "tower-hero": {
+      "alt": "Burj Khalifa tower cut out against transparency",
+      "png": "/media/cutouts/tower-hero.png",
+      "glow": "/media/cutouts/tower-hero-glow.png",
+      "width": 644,
+      "height": 2456,
+      "sourcePage": "https://www.pexels.com/photo/illuminated-skyscraper-at-dusk-8494888/",
+      "sourceUrl": "https://images.pexels.com/photos/8494888/pexels-photo-8494888.jpeg?auto=compress&cs=tinysrgb&w=2400",
+      "edgeInspection": "/media/reports/tower-cutout-obsidian.jpg"
+    }
+  }
+}

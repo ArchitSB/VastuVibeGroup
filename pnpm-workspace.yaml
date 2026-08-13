@@ -1,0 +1,5 @@
+allowBuilds:
+  sharp: true
+  unrs-resolver: true
+overrides:
+  zustand: 5.0.14

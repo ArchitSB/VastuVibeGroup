@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { motionTheme } from "@/lib/motion-theme";
 import { Wordmark } from "@/components/brand/Wordmark";
+import { MagneticButton } from "@/components/ui/MagneticButton";
 
 gsap.registerPlugin(useGSAP);
 
@@ -90,9 +91,9 @@ export function Nav() {
               {link.label}
             </Link>
           ))}
-          <a className="button button--outline button--nav" href={whatsapp} target="_blank" rel="noreferrer">
+          <MagneticButton className="button--outline button--nav" href={whatsapp} target="_blank" rel="noreferrer">
             Book a Consultation
-          </a>
+          </MagneticButton>
         </nav>
 
         <button
@@ -124,4 +125,3 @@ export function Nav() {
     </header>
   );
 }
-

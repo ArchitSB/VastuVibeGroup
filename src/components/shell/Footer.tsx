@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Wordmark } from "@/components/brand/Wordmark";
+import { FooterBrand } from "@/components/brand/FooterBrand";
 
 const links = [
   ["Residences", "#residences"],
@@ -13,7 +13,7 @@ export function Footer() {
     <footer id="contact" className="site-footer">
       <div className="site-footer__topline" />
       <div className="site-footer__grid">
-        <Wordmark className="site-footer__brand" />
+        <FooterBrand />
         <div className="site-footer__contact">
           <p className="eyebrow">Start a private conversation</p>
           <a href="tel:+255789113131">+255 789 113 131</a>
@@ -39,4 +39,3 @@ export function Footer() {
     </footer>
   );
 }
-

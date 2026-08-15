@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { VVMonogram } from "./VVMonogram";
+import { LogoMark } from "./LogoMark";
 
 type WordmarkProps = {
   className?: string;
@@ -10,7 +10,7 @@ type WordmarkProps = {
 export function Wordmark({ className, compact = false, monogramOnly = false }: WordmarkProps) {
   return (
     <span className={cn("wordmark", compact && "wordmark--compact", className)}>
-      <VVMonogram className="wordmark__monogram" />
+      <LogoMark className="wordmark__monogram" size={compact ? 64 : 128} priority={compact} />
       {!monogramOnly && (
         <span className="wordmark__type" aria-label="VastuVibe">
           <span>Vastu</span>
@@ -23,4 +23,3 @@ export function Wordmark({ className, compact = false, monogramOnly = false }: W
     </span>
   );
 }
-

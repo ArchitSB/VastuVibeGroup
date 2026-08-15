@@ -1,11 +1,11 @@
 import { RisingTowerHero } from "@/components/sections/RisingTowerHero";
-import { HomepageStubs } from "@/components/sections/HomepageStubs";
+import { Day2Runtime } from "@/components/sections/day2/Day2Runtime";
 
 export default function Home() {
   return (
     <main>
       <RisingTowerHero />
-      <HomepageStubs />
+      <Day2Runtime />
     </main>
   );
 }

@@ -2,6 +2,7 @@
 
 import { DesktopHeroHeading } from "@/components/sections/DesktopHeroHeading";
 import { RisingTowerRuntime } from "@/components/sections/RisingTowerRuntime";
+import { MagneticButton } from "@/components/ui/MagneticButton";
 
 const whatsapp =
   "https://wa.me/255789113131?text=Hello%20VastuVibe%20Group%2C%20I%27m%20interested%20in%20Dubai%20properties.";
@@ -41,12 +42,12 @@ export function RisingTowerHero() {
           Official sales partner — DAMAC Properties, Dubai
         </p>
         <div className="hero__actions" data-hero-copy>
-          <a className="button button--primary" href="#residences">
+          <MagneticButton className="button--primary" href="#residences">
             Explore Residences <span aria-hidden="true">↓</span>
-          </a>
-          <a className="button button--outline" href={whatsapp} target="_blank" rel="noreferrer">
+          </MagneticButton>
+          <MagneticButton className="button--outline" href={whatsapp} target="_blank" rel="noreferrer">
             Book a Private Consultation
-          </a>
+          </MagneticButton>
         </div>
       </div>
 

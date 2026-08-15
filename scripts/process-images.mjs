@@ -56,7 +56,7 @@ const assets = [
   {
     key: "dar-coast",
     file: "dar-coast.jpg",
-    alt: "Indian Ocean at dusk in Dar es Salaam",
+    alt: "Dar es Salaam coastline at dusk",
     profile: "teal",
     sourcePage: "https://www.pexels.com/photo/sunset-above-calm-sea-water-13344624/",
     sourceUrl: "https://images.pexels.com/photos/13344624/pexels-photo-13344624.jpeg?auto=compress&cs=tinysrgb&w=3000",

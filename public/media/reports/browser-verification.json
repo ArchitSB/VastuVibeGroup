@@ -1,6 +1,6 @@
 {
-  "baseUrl": "http://localhost:3000",
-  "generatedAt": "2026-08-13T20:04:54.630Z",
+  "baseUrl": "http://127.0.0.1:4173",
+  "generatedAt": "2026-08-15T21:36:57.116Z",
   "consoleErrors": [],
   "desktop": {
     "viewport": [
@@ -9,7 +9,7 @@
     ],
     "canvas": true,
     "deviceMemory": 8,
-    "pageHeight": 9137,
+    "pageHeight": 3781,
     "scrollY": 0,
     "heroRect": {
       "x": 0,
@@ -46,61 +46,67 @@
     ],
     "canvas": 0,
     "threeRuntimeLoaded": false,
-    "firstLoadJsBytes": 185162,
+    "firstLoadJsBytes": 187459,
     "resources": [
       {
-        "url": "http://localhost:3000/_next/static/chunks/webpack-5d108a3d0b00fe82.js",
-        "transferSize": 2175,
-        "encodedBodySize": 1875,
-        "decodedBodySize": 3607
+        "url": "http://127.0.0.1:4173/_next/static/chunks/webpack-a07b5e459bad9db9.js",
+        "transferSize": 2277,
+        "encodedBodySize": 1977,
+        "decodedBodySize": 3771
       },
       {
-        "url": "http://localhost:3000/_next/static/chunks/main-app-98588c8ff257e64a.js",
+        "url": "http://127.0.0.1:4173/_next/static/chunks/main-app-98588c8ff257e64a.js",
         "transferSize": 858,
         "encodedBodySize": 558,
         "decodedBodySize": 558
       },
       {
-        "url": "http://localhost:3000/_next/static/chunks/04763798-54093ab3e3cf7aa0.js",
+        "url": "http://127.0.0.1:4173/_next/static/chunks/04763798-54093ab3e3cf7aa0.js",
         "transferSize": 20867,
         "encodedBodySize": 20567,
         "decodedBodySize": 51544
       },
       {
-        "url": "http://localhost:3000/_next/static/chunks/86-5bf4bde4b09fb979.js",
-        "transferSize": 26343,
-        "encodedBodySize": 26043,
-        "decodedBodySize": 63045
-      },
-      {
-        "url": "http://localhost:3000/_next/static/chunks/484-c0f5c1963822c2b9.js",
+        "url": "http://127.0.0.1:4173/_next/static/chunks/484-c0f5c1963822c2b9.js",
         "transferSize": 45120,
         "encodedBodySize": 44820,
         "decodedBodySize": 173963
       },
       {
-        "url": "http://localhost:3000/_next/static/chunks/app/layout-46eb81840dc49660.js",
-        "transferSize": 3741,
-        "encodedBodySize": 3441,
-        "decodedBodySize": 9659
-      },
-      {
-        "url": "http://localhost:3000/_next/static/chunks/5c634634-c91e72d76c4ba349.js",
+        "url": "http://127.0.0.1:4173/_next/static/chunks/5c634634-c91e72d76c4ba349.js",
         "transferSize": 54616,
         "encodedBodySize": 54316,
         "decodedBodySize": 173019
       },
       {
-        "url": "http://localhost:3000/_next/static/chunks/766-d86c38c0a4b0d377.js",
-        "transferSize": 27529,
-        "encodedBodySize": 27229,
-        "decodedBodySize": 75584
+        "url": "http://127.0.0.1:4173/_next/static/chunks/998-fbdf683eb099bd01.js",
+        "transferSize": 34577,
+        "encodedBodySize": 34277,
+        "decodedBodySize": 90354
       },
       {
-        "url": "http://localhost:3000/_next/static/chunks/app/page-a4797d356079db48.js",
-        "transferSize": 6613,
-        "encodedBodySize": 6313,
-        "decodedBodySize": 14355
+        "url": "http://127.0.0.1:4173/_next/static/chunks/950-23255e8e91791417.js",
+        "transferSize": 5242,
+        "encodedBodySize": 4942,
+        "decodedBodySize": 12269
+      },
+      {
+        "url": "http://127.0.0.1:4173/_next/static/chunks/598-cb0dea16f11fb57c.js",
+        "transferSize": 14404,
+        "encodedBodySize": 14104,
+        "decodedBodySize": 34922
+      },
+      {
+        "url": "http://127.0.0.1:4173/_next/static/chunks/app/layout-09c27ad5200ee9fc.js",
+        "transferSize": 4930,
+        "encodedBodySize": 4630,
+        "decodedBodySize": 13135
+      },
+      {
+        "url": "http://127.0.0.1:4173/_next/static/chunks/app/page-e4f1d6610f34a714.js",
+        "transferSize": 7568,
+        "encodedBodySize": 7268,
+        "decodedBodySize": 17339
       }
     ],
     "sessionFlagAfterFirstVisit": "true",

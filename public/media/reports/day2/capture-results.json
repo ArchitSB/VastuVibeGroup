@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-08-15T23:02:21.288Z",
+  "baseUrl": "http://127.0.0.1:4174",
+  "consoleErrors": [],
+  "screenshots": [
+    "/Users/archit/Developer/VastuVibeGroup/public/media/reports/day2/preloader-logo.png",
+    "/Users/archit/Developer/VastuVibeGroup/public/media/reports/day2/s2-trust-marquee.png",
+    "/Users/archit/Developer/VastuVibeGroup/public/media/reports/day2/s3-statement.png",
+    "/Users/archit/Developer/VastuVibeGroup/public/media/reports/day2/s4-vault.png",
+    "/Users/archit/Developer/VastuVibeGroup/public/media/reports/day2/s5-deal.png",
+    "/Users/archit/Developer/VastuVibeGroup/public/media/reports/day2/s6-spotlight.png",
+    "/Users/archit/Developer/VastuVibeGroup/public/media/reports/day2/s7-tanzania.png",
+    "/Users/archit/Developer/VastuVibeGroup/public/media/reports/day2/s8-journey.png",
+    "/Users/archit/Developer/VastuVibeGroup/public/media/reports/day2/s9-founder-note.png",
+    "/Users/archit/Developer/VastuVibeGroup/public/media/reports/day2/s10-cta.png",
+    "/Users/archit/Developer/VastuVibeGroup/public/media/reports/day2/s11-footer.png",
+    "/Users/archit/Developer/VastuVibeGroup/public/media/reports/day2/mobile-vault-390.png",
+    "/Users/archit/Developer/VastuVibeGroup/public/media/reports/day2/mobile-journey-390.png",
+    "/Users/archit/Developer/VastuVibeGroup/public/media/reports/day2/mobile-nav-overlay-390.png"
+  ],
+  "vault": {
+    "index": "03",
+    "name": "Lagoon Villas",
+    "activeSource": "/media/processed/lagoon-aerial-1280.jpg",
+    "activeOpacity": "1",
+    "visibleSources": [
+      {
+        "source": "/media/processed/lagoon-aerial-1280.jpg",
+        "opacity": "1"
+      }
+    ]
+  }
+}

@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { animate, createDrawable, createTimeline } from "animejs";
+import { animate, createTimeline } from "animejs";
 import { motionTheme } from "@/lib/motion-theme";
-import { VVMonogram } from "@/components/brand/VVMonogram";
+import { LogoMark } from "@/components/brand/LogoMark";
 
 const storageKey = "vastuvibe-intro-seen";
 
@@ -36,7 +36,6 @@ export function Preloader() {
     document.documentElement.dataset.siteReady = "false";
     const totalMs = motionTheme.duration.preloader * 1000;
     const countState = { value: 0 };
-    const paths = createDrawable(root.querySelectorAll(".preloader__path"));
     const timeline = createTimeline({
       autoplay: true,
       onComplete: () => {
@@ -47,13 +46,23 @@ export function Preloader() {
     });
 
     timeline.add(
-      paths,
+      root.querySelectorAll(".preloader__mark"),
       {
-        draw: ["0 0", "0 1"],
+        opacity: [0, 1],
+        scale: [motionTheme.day2.logoStartScale, 1],
         duration: totalMs * 0.48,
-        ease: "inOut(3)",
+        ease: "out(4)",
       },
       0,
+    );
+    timeline.add(
+      root.querySelectorAll(".preloader__shine"),
+      {
+        translateX: ["-160%", "160%"],
+        duration: totalMs * 0.42,
+        ease: "inOut(3)",
+      },
+      totalMs * 0.12,
     );
     timeline.add(
       countState,
@@ -109,7 +118,10 @@ export function Preloader() {
       <div className="preloader__curtain preloader__curtain--left" data-curtain="left" />
       <div className="preloader__curtain preloader__curtain--right" data-curtain="right" />
       <div className="preloader__content" data-preloader-content>
-        <VVMonogram className="preloader__mark" pathClassName="preloader__path" data-preloader-path />
+        <span className="preloader__logo-mask">
+          <LogoMark className="preloader__mark" size={256} priority />
+          <span className="preloader__shine" aria-hidden="true" />
+        </span>
         <span ref={counterRef} className="preloader__counter">
           00
         </span>

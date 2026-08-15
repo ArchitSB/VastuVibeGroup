@@ -1,0 +1,15 @@
+{
+  "available": true,
+  "source": "/media/logo/vastuvibe-mark.png",
+  "marks": {
+    "64": "/media/logo/vastuvibe-mark-64.png",
+    "128": "/media/logo/vastuvibe-mark-128.png",
+    "256": "/media/logo/vastuvibe-mark-256.png",
+    "512": "/media/logo/vastuvibe-mark-512.png"
+  },
+  "icons": {
+    "favicon": "/media/logo/favicon-32.png",
+    "apple": "/media/logo/apple-touch-icon-180.png",
+    "large": "/media/logo/favicon-512.png"
+  }
+}

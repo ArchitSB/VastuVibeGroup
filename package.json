@@ -8,7 +8,8 @@
     "start": "serve out -l 3000",
     "lint": "eslint .",
     "fetch:assets": "node scripts/fetch-assets.mjs",
-    "process:images": "node scripts/process-images.mjs"
+    "process:images": "node scripts/process-images.mjs",
+    "process:logo": "node scripts/process-logo.mjs"
   },
   "dependencies": {
     "@eslint/eslintrc": "latest",

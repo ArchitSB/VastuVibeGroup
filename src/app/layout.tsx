@@ -38,24 +38,38 @@ export const metadata: Metadata = {
   },
 };
 
+const loaderCriticalCss = `
+  html[data-preloader="show"],
+  html[data-preloader="show"] body {
+    margin: 0;
+    overflow: hidden !important;
+    background: #0b0b0f;
+  }
+  html[data-preloader="show"] body > :not(.preloader):not(script):not(style) {
+    visibility: hidden !important;
+  }
+  html[data-preloader="show"] .preloader {
+    position: fixed !important;
+    z-index: 2147483646 !important;
+    inset: 0 !important;
+    display: block !important;
+    overflow: hidden !important;
+    background: #0b0b0f !important;
+  }
+`;
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const bootWatchdog = `
     (() => {
       const ready = (reason) => {
+        if (document.documentElement.dataset.siteReady === 'true') return;
         if (reason === 'watchdog' && document.documentElement.dataset.siteReadyReason === 'animated') return;
         document.documentElement.dataset.siteReady = 'true';
         document.documentElement.dataset.siteReadyReason = reason;
         delete document.documentElement.dataset.preloader;
-        try { sessionStorage.setItem('vastuvibe-intro-seen', 'true'); } catch {}
         window.dispatchEvent(new Event('vastuvibe:ready'));
       };
-      try {
-        if (sessionStorage.getItem('vastuvibe-intro-seen') === 'true' || matchMedia('(prefers-reduced-motion: reduce)').matches || innerWidth < 1024 || matchMedia('(pointer: coarse)').matches || navigator.maxTouchPoints > 0) ready('instant');
-        else {
-          document.documentElement.dataset.preloader = 'show';
-          setTimeout(() => ready('watchdog'), ${motionTheme.duration.preloaderMax * 1000});
-        }
-      } catch { setTimeout(() => ready('watchdog'), ${motionTheme.duration.preloaderMax * 1000}); }
+      setTimeout(() => ready('watchdog'), ${motionTheme.duration.preloaderMax * 1000});
     })();
   `;
 
@@ -64,8 +78,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       lang="en"
       suppressHydrationWarning
       className={`${fraunces.variable} ${instrumentSans.variable}`}
+      data-preloader="show"
+      data-site-ready="false"
+      data-site-ready-reason="pending"
     >
       <head>
+        <style id="loader-critical" dangerouslySetInnerHTML={{ __html: loaderCriticalCss }} />
         <script dangerouslySetInnerHTML={{ __html: bootWatchdog }} />
       </head>
       <body>

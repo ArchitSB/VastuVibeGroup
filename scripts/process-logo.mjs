@@ -16,21 +16,22 @@ try {
 await mkdir(logoDir, { recursive: true });
 const trimmed = sharp(source).trim({ background: { r: 0, g: 0, b: 0, alpha: 0 } });
 const marks = [64, 128, 256, 512];
+const transparent = { r: 0, g: 0, b: 0, alpha: 0 };
 
 await Promise.all(
   marks.map((size) =>
     trimmed
       .clone()
-      .resize(size, size, { fit: "contain", withoutEnlargement: false })
+      .resize(size, size, { fit: "contain", withoutEnlargement: false, background: transparent })
       .png({ compressionLevel: 9, adaptiveFiltering: true })
       .toFile(join(logoDir, `vastuvibe-mark-${size}.png`)),
   ),
 );
 
 await Promise.all([
-  trimmed.clone().resize(32, 32, { fit: "contain" }).png().toFile(join(logoDir, "favicon-32.png")),
-  trimmed.clone().resize(180, 180, { fit: "contain" }).png().toFile(join(logoDir, "apple-touch-icon-180.png")),
-  trimmed.clone().resize(512, 512, { fit: "contain" }).png().toFile(join(logoDir, "favicon-512.png")),
+  trimmed.clone().resize(32, 32, { fit: "contain", background: transparent }).png().toFile(join(logoDir, "favicon-32.png")),
+  trimmed.clone().resize(180, 180, { fit: "contain", background: transparent }).png().toFile(join(logoDir, "apple-touch-icon-180.png")),
+  trimmed.clone().resize(512, 512, { fit: "contain", background: transparent }).png().toFile(join(logoDir, "favicon-512.png")),
 ]);
 
 const manifest = {

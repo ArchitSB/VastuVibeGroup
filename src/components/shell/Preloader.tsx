@@ -1,13 +1,18 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { animate, createTimeline } from "animejs";
-import { motionTheme } from "@/lib/motion-theme";
-import { LogoMark } from "@/components/brand/LogoMark";
+import { useCallback, useEffect, useRef, useState } from "react";
+import dynamic from "next/dynamic";
+import { SsaLoaderFallback } from "@/components/shell/SsaLoaderFallback";
 
-const storageKey = "vastuvibe-intro-seen";
+type LoaderMode = "pending" | "desktop" | "fallback" | "reduced";
+type ReadyReason = "animated" | "instant" | "watchdog";
 
-function signalReady(reason: "animated" | "instant" | "watchdog" = "animated") {
+const DesktopSsaLoader = dynamic(
+  () => import("@/components/three/SsaLoaderScene").then((module) => module.SsaLoaderScene),
+  { ssr: false, loading: () => null },
+);
+
+function signalReady(reason: ReadyReason) {
   document.documentElement.dataset.siteReady = "true";
   document.documentElement.dataset.siteReadyReason = reason;
   delete document.documentElement.dataset.preloader;
@@ -15,117 +20,56 @@ function signalReady(reason: "animated" | "instant" | "watchdog" = "animated") {
 }
 
 export function Preloader() {
-  const rootRef = useRef<HTMLDivElement>(null);
-  const counterRef = useRef<HTMLSpanElement>(null);
+  const [mode, setMode] = useState<LoaderMode>("pending");
   const [visible, setVisible] = useState(true);
+  const completedRef = useRef(false);
+
+  const finish = useCallback((reason: ReadyReason = "animated") => {
+    if (completedRef.current) return;
+    completedRef.current = true;
+    setVisible(false);
+    signalReady(reason);
+  }, []);
 
   useEffect(() => {
-    const root = rootRef.current;
-    const counter = counterRef.current;
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const seen = window.sessionStorage.getItem(storageKey) === "true";
-    const watchdogFinished = document.documentElement.dataset.siteReady === "true";
+    document.documentElement.dataset.siteReady = "false";
+    document.documentElement.dataset.siteReadyReason = "pending";
 
-    if (!root || !counter || reduced || seen || watchdogFinished) {
-      setVisible(false);
-      const reason = watchdogFinished ? "watchdog" : "instant";
-      requestAnimationFrame(() => signalReady(reason));
-      return;
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduced) {
+      setMode("reduced");
+    } else {
+      const finePointer = window.matchMedia("(pointer: fine)").matches;
+      const memory = (navigator as Navigator & { deviceMemory?: number }).deviceMemory ?? 4;
+      setMode(window.innerWidth >= 1024 && finePointer && memory >= 4 ? "desktop" : "fallback");
     }
 
-    document.documentElement.dataset.siteReady = "false";
-    const totalMs = motionTheme.duration.preloader * 1000;
-    const countState = { value: 0 };
-    const timeline = createTimeline({
-      autoplay: true,
-      onComplete: () => {
-        window.sessionStorage.setItem(storageKey, "true");
-        setVisible(false);
-        signalReady();
-      },
-    });
-
-    timeline.add(
-      root.querySelectorAll(".preloader__mark"),
-      {
-        opacity: [0, 1],
-        scale: [motionTheme.day2.logoStartScale, 1],
-        duration: totalMs * 0.48,
-        ease: "out(4)",
-      },
-      0,
-    );
-    timeline.add(
-      root.querySelectorAll(".preloader__shine"),
-      {
-        translateX: ["-160%", "160%"],
-        duration: totalMs * 0.42,
-        ease: "inOut(3)",
-      },
-      totalMs * 0.12,
-    );
-    timeline.add(
-      countState,
-      {
-        value: 100,
-        duration: totalMs * 0.62,
-        ease: "out(3)",
-        onUpdate: () => {
-          counter.textContent = String(Math.round(countState.value)).padStart(2, "0");
-        },
-      },
-      0,
-    );
-    timeline.add(
-      root.querySelectorAll("[data-curtain='left']"),
-      {
-        translateX: "-101%",
-        duration: totalMs * 0.38,
-        ease: "inOut(4)",
-      },
-      totalMs * 0.62,
-    );
-    timeline.add(
-      root.querySelectorAll("[data-curtain='right']"),
-      {
-        translateX: "101%",
-        duration: totalMs * 0.38,
-        ease: "inOut(4)",
-      },
-      totalMs * 0.62,
-    );
-    animate(root.querySelectorAll("[data-preloader-content]"), {
-      opacity: [1, 0],
-      duration: totalMs * 0.18,
-      delay: totalMs * 0.58,
-      ease: "in(2)",
-    });
-
-    return () => {
-      timeline.revert();
+    const handleWatchdog = () => {
+      if (document.documentElement.dataset.siteReadyReason === "watchdog") finish("watchdog");
     };
-  }, []);
+    window.addEventListener("vastuvibe:ready", handleWatchdog);
+    return () => window.removeEventListener("vastuvibe:ready", handleWatchdog);
+  }, [finish]);
 
   if (!visible) return null;
 
   return (
     <div
-      ref={rootRef}
       className="preloader"
-      aria-label="Loading VastuVibe Group"
+      role="status"
+      aria-label="VastuVibe Group is loading"
       aria-live="polite"
+      aria-busy="true"
     >
-      <div className="preloader__curtain preloader__curtain--left" data-curtain="left" />
-      <div className="preloader__curtain preloader__curtain--right" data-curtain="right" />
-      <div className="preloader__content" data-preloader-content>
-        <span className="preloader__logo-mask">
-          <LogoMark className="preloader__mark" size={256} priority />
-          <span className="preloader__shine" aria-hidden="true" />
-        </span>
-        <span ref={counterRef} className="preloader__counter">
-          00
-        </span>
-      </div>
+      {mode === "pending" && <div className="ssa-loader ssa-loader--pending" aria-hidden="true" />}
+      {mode === "desktop" && (
+        <DesktopSsaLoader
+          onComplete={() => finish("animated")}
+          onUnavailable={() => setMode("fallback")}
+        />
+      )}
+      {mode === "fallback" && <SsaLoaderFallback onComplete={() => finish("animated")} />}
+      {mode === "reduced" && <SsaLoaderFallback reduced onComplete={() => finish("instant")} />}
     </div>
   );
 }
